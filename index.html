@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tetris 99 Bingo card</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bingo.css">
+    </head>
+    <body>
+        <h2>This is just a quick and dirty thing, don't expect it to be fancy. kthnx.</h2>
+        <button onclick="clearFields()">Remove All</button>
+        <form id="playeraddform">
+            <label>
+                Add player:
+                <input id="playernameinput" type="text">
+            </label>
+            <button type="submit">Add &plus;</button>
+        </form>
+        <form id="numberform">
+            <label>
+                Hit number:
+                <input id="numberinput" type="number">
+            </label>
+            <button type="submit">Check!</button>
+        </form>
+        <label>
+            Field Size:
+            <input id="fieldSizeSlider" type="range" min="0.8" max="3" value="2" step="0.1">
+        </label>
+        <form id="importform">
+            <label>
+                Import fields:
+                <textarea id="importinput" ></textarea>
+            </label>
+            <button type="submit">Import!</button>
+        </form>
+        <label>Share me:<textarea id="exportfield">[]</textarea></label>
+        <div id="mainfield" >
+
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

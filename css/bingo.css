@@ -1,0 +1,23 @@
+.bingo-square {
+    width: 2em;
+    height: 2em;
+    background: red;
+    font-size: 200%;
+    display: inline-block;
+    margin: 0.05em;
+    border: solid black;
+}
+
+.bingo-field {
+    margin: 0.5em;
+    border: solid black;
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
+}
+
+.bingo-center {
+    background: green;
+}
